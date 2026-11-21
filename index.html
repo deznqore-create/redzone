@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RED ZONE</title>
+  <meta name="description" content="RED ZONE is an architectural inspiration studio. A quiet archive of buildings, rooms, and studies." />
+  <link rel="icon" href="brand/logo.png" type="image/png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="home">
+  <div class="top-bar"></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="RED ZONE home">
+        <img src="brand/logo.png" alt="RED ZONE" />
+        <span class="brand-text">
+          <span class="brand-name">RED ZONE</span>
+          <span class="brand-sub">Archive</span>
+        </span>
+      </a>
+            <nav class="nav-desktop" aria-label="Primary">
+        <a href="index.html" data-nav="home">الرئيسية</a>
+        <a href="projects.html" data-nav="projects">المشاريع</a>
+        <a href="books.html" data-nav="books">الكتب</a>
+        <a href="about.html" data-nav="about">عن الاستوديو</a>
+        <a href="contact.html" data-nav="contact">تواصل</a>
+      </nav>
+      <button type="button" class="menu-btn" data-menu-open aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <div class="nav-mobile" data-menu-panel>
+    <div class="nav-mobile-top">
+      <img src="brand/logo.png" alt="" width="56" height="56" style="object-fit:contain" />
+      <button type="button" class="menu-btn" data-menu-close aria-label="Close menu">✕</button>
+    </div>
+        <nav>
+      <a href="index.html" data-nav="home">الرئيسية</a>
+      <a href="projects.html" data-nav="projects">المشاريع</a>
+      <a href="books.html" data-nav="books">الكتب</a>
+      <a href="about.html" data-nav="about">عن الاستوديو</a>
+      <a href="contact.html" data-nav="contact">تواصل</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="wrap hero">
+      <div class="rise">
+        <p class="eyebrow">Architecture studio</p>
+        <h1>Explore architecture. Discover inspiration.</h1>
+        <p class="lead">A monograph of buildings, rooms, landscapes, and images. Not a feed. A place to look slowly.</p>
+        <div class="hero-actions">
+          <a class="btn" href="projects.html">Enter the archive</a>
+          <a class="btn btn-ghost" href="about.html">The studio</a>
+        </div>
+      </div>
+      <div class="rise" data-lead style="animation-delay:90ms"></div>
+    </section>
+
+    <section class="wrap section">
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <a href="projects.html">All projects</a>
+      </div>
+      <div class="grid-3" data-selected></div>
+    </section>
+
+    <section class="ink-band">
+      <div class="wrap grid-about">
+        <img src="brand/logo.png" alt="RED ZONE" style="width:7rem;height:7rem;object-fit:contain" />
+        <div>
+          <p class="eyebrow" style="color:color-mix(in srgb, var(--paper) 50%, transparent)">About the studio</p>
+          <h2 style="font-size:clamp(1.75rem,3vw,2.5rem);margin-top:0.75rem;max-width:36rem">Red is a frame. What sits inside it should earn the quiet around it.</h2>
+          <p class="muted" style="margin-top:1rem;max-width:36rem">RED ZONE keeps a quiet archive — chosen work, sequenced carefully, given room to be read.</p>
+          <p style="margin-top:1.5rem"><a class="btn" href="about.html" style="background:var(--paper);color:var(--ink)">Read more</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="serif" style="font-size:1.25rem">RED ZONE</p>
+        <p class="muted" style="font-size:0.875rem;margin-top:0.25rem">Architecture · Inspiration · Archive</p>
+      </div>
+            <div class="footer-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="projects.html">المشاريع</a>
+        <a href="books.html">الكتب</a>
+        <a href="about.html">عن الاستوديو</a>
+        <a href="contact.html">تواصل</a>
+        <a href="admin-login.html">صفحة النشر</a>
+      </div>
+      <p class="footer-copy">© RED ZONE. By DEZN.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
