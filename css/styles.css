@@ -642,3 +642,48 @@ textarea {
   outline-offset: 2px;
   border-color: transparent;
 }
+
+
+/* REDZONE responsive refinements */
+html, body { max-width: 100%; overflow-x: clip; }
+.wrap { width: min(100% - 2.5rem, var(--max)); margin-inline: auto; }
+button, .btn, input, select, textarea { max-width: 100%; }
+img, video, iframe { max-width: 100%; }
+
+@media (max-width: 767px) {
+  .header-inner { padding: .65rem 1rem; gap: .5rem; }
+  .brand img { width: 2.7rem; height: 2.7rem; }
+  .wrap { width: min(100% - 2rem, var(--max)); }
+  .hero { min-height: auto; padding-top: 3rem; padding-bottom: 2.5rem; gap: 1.5rem; }
+  .hero h1 { font-size: clamp(2.25rem, 11vw, 3.6rem); line-height: 1.04; overflow-wrap: anywhere; }
+  .lead { font-size: 1rem; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: .65rem; }
+  .hero-actions .btn { flex: 1 1 9rem; text-align: center; }
+  .section { padding-block: 2.5rem; }
+  .section-head { align-items: flex-start; gap: .75rem; flex-wrap: wrap; }
+  .grid-3, .grid-2, .grid-about { grid-template-columns: minmax(0, 1fr) !important; gap: 1.25rem; }
+  .grid-about { padding-block: 2.5rem; }
+  .nav-mobile { padding: max(1rem, env(safe-area-inset-top)) 1.25rem max(1rem, env(safe-area-inset-bottom)); overflow-y: auto; }
+  .nav-mobile nav a { font-size: clamp(1.6rem, 8vw, 2rem); }
+  .card, .project-card, .book-card { min-width: 0; }
+  .card img, .project-card img, .book-card img { width: 100%; height: auto; object-fit: cover; }
+  .site-footer, footer { padding-bottom: max(1.5rem, env(safe-area-inset-bottom)); }
+  [data-admin-desk] { padding-inline: 0; }
+  [data-admin-desk] form { display: grid; grid-template-columns: minmax(0, 1fr); gap: .8rem; }
+  [data-admin-desk] input, [data-admin-desk] textarea, [data-admin-desk] select { width: 100%; min-width: 0; }
+  [data-admin-desk] table { display: block; width: 100%; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+  .search-bar input[type="search"] { max-width: 100%; }
+}
+
+@media (max-width: 380px) {
+  .wrap { width: calc(100% - 1.5rem); }
+  .header-inner { padding-inline: .75rem; }
+  .menu-btn { width: 2.5rem; height: 2.5rem; }
+  .hero h1 { font-size: clamp(2rem, 10vw, 2.7rem); }
+  .btn { padding: .7rem .9rem; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero { gap: 2rem; }
+}

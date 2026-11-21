@@ -427,11 +427,11 @@ function renderAdminLogin() {
     e.preventDefault();
     const key = qs("#desk-key")?.value?.trim() || "";
     // Simple studio key (change if you want)
-    if (key === "redzone" || key === "REDZONE" || key === "") {
+    if (key === "redzone") {
       sessionStorage.setItem(ADMIN_KEY, "1");
       location.href = "admin.html";
     } else {
-      alert("Wrong key. Try: redzone");
+      alert("كلمة المرور غير صحيحة. حاول مرة أخرى.");
     }
   });
 }
